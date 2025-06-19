@@ -9,15 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroPass.Application", "sr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{12CBE726-9E6D-4A71-B25A-2F80CF42C68E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroPass.DomainService", "src\Domain\DomainService\MetroPass.DomainService.csproj", "{1849377A-59E0-4C95-93E8-3A495719E730}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroPass.DomainModel", "src\Domain\DomainModel\MetroPass.DomainModel.csproj", "{7B876EBA-025C-4943-9658-ECFEE5F2B0B8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroPass.Infrastructure", "src\Infrastructure\MetroPass.Infrastructure.csproj", "{378AAFF5-D5B8-4D0B-9FCC-3B6C1858755C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{4426FF24-80F6-421C-891B-CD488893B31C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroPass.Presentation", "src\Presentation\WebApi\MetroPass.Presentation.csproj", "{01357D24-0C01-48AD-B6AD-179928A1420A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroPass.Domain", "src\Domain\MetroPass.Domain.csproj", "{E7D685E3-22E1-43C5-BED8-F6B0B9BF238B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +46,10 @@ Global
 		{01357D24-0C01-48AD-B6AD-179928A1420A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01357D24-0C01-48AD-B6AD-179928A1420A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01357D24-0C01-48AD-B6AD-179928A1420A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7D685E3-22E1-43C5-BED8-F6B0B9BF238B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7D685E3-22E1-43C5-BED8-F6B0B9BF238B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7D685E3-22E1-43C5-BED8-F6B0B9BF238B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7D685E3-22E1-43C5-BED8-F6B0B9BF238B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{917E5A38-03D4-490B-BE0A-9A93B98FCA05} = {AECBA74B-BA6F-45A8-BA7A-69D584A8C609}
@@ -57,5 +59,6 @@ Global
 		{378AAFF5-D5B8-4D0B-9FCC-3B6C1858755C} = {AECBA74B-BA6F-45A8-BA7A-69D584A8C609}
 		{4426FF24-80F6-421C-891B-CD488893B31C} = {AECBA74B-BA6F-45A8-BA7A-69D584A8C609}
 		{01357D24-0C01-48AD-B6AD-179928A1420A} = {4426FF24-80F6-421C-891B-CD488893B31C}
+		{E7D685E3-22E1-43C5-BED8-F6B0B9BF238B} = {AECBA74B-BA6F-45A8-BA7A-69D584A8C609}
 	EndGlobalSection
 EndGlobal
