@@ -2,9 +2,9 @@
 
 namespace MetroPass.Domain.Interfaces;
 
-public interface ICardRespository
+public interface ICardRepository
 {
-    Task<Card?> GetCardByCardIdAsync(int cardId);
+    Task<Card> GetCardByCardNoAsync(string cardNo);
 
     Task SaveAsync(Card card);
 }
