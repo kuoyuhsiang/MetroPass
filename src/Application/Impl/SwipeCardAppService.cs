@@ -24,7 +24,7 @@ public class SwipeCardAppService
 
         if (card.IsMonthlyPassValid)
         {
-            return $"進站成功（使用月票），月票有效至 {card.MonthlyPassExpiredDate?.ToString("yyyy-MM-dd")}";
+            return $"進站成功（使用月票），月票有效至 {card.MonthlyPassExpiredDate.ToString("yyyy-MM-dd")}";
         }
 
         try
