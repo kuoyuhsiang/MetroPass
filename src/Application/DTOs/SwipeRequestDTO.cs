@@ -4,11 +4,11 @@ namespace MetroPass.Application.DTOs;
 
 public class SwipeRequestDTO
 {
-    public string CardNo { get; set; } = string.Empty;
+    public string CardId { get; set; }
 
-    public int Fare { get; set; }
+    public string StationId { get; set; }
+
+    public DateTime TimeStamp { get; set; }
 
     public MetroStation MetroStation { get; set; }
-    
-    public Direction Direction { get; set; }
 }

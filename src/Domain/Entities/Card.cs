@@ -12,6 +12,10 @@ public class Card
 
     public CardStatus CardStatus { get; set; }
 
+    public CardType CardType { get; set; }
+
+    public int Fare { get; set; }
+
     public bool IsActive
     {
         get
@@ -23,6 +27,14 @@ public class Card
     public bool IsMonthlyPass { get; set; }
 
     public DateTime MonthlyPassExpiredDate { get; set; }
+    
+    public bool IsSufficientBalance
+    {
+        get
+        {
+            return Balance < 0;
+        }
+    }
 
     public bool IsMonthlyPassValid
     {
@@ -34,9 +46,6 @@ public class Card
 
     public void Deduct(int fare)
     {
-        if (Balance <= fare)
-            throw new InvalidOperationException("餘額不足");
-
         Balance -= fare;
     }
 }
