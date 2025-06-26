@@ -6,8 +6,6 @@ public class SwipeRequestDTO
 {
     public string CardId { get; set; }
 
-    public string StationId { get; set; }
-
     public DateTime TimeStamp { get; set; }
 
     public MetroStation MetroStation { get; set; }

@@ -4,7 +4,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllers();
-builder.Services.AddRepositories();
+builder.Services.RegisterAutoMapper();
+builder.Services.RegisterApplication();
+builder.Services.RegisterRepository();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

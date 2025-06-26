@@ -5,7 +5,7 @@ namespace MetroPass.Presentation.Register;
 
 public static class RepositoryRegister
 {
-    public static IServiceCollection AddRepositories(this IServiceCollection service)
+    public static IServiceCollection RegisterRepository(this IServiceCollection service)
     {
         service.AddSingleton<ICardRepository, InMemoryCardRepository>();
         return service;

@@ -8,9 +8,6 @@ public class SwipeEntryRequest
     [Required]
     public string? CardId { get; set; }      
 
-    [Required]        
-    public string? StationId { get; set; }   
-    
     [Required]
     public DateTime Timestamp { get; set; }
 }

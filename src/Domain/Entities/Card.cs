@@ -32,7 +32,7 @@ public class Card
     {
         get
         {
-            return Balance < 0;
+            return Balance > 0;
         }
     }
 
