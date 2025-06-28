@@ -23,10 +23,20 @@ public class SwipeCardAppService : ISwipeCardAppService
         var card = await _cardRepository.GetCardByCardNoAsync(swipeRequestDTO.CardId);
 
         if (card is null)
-            throw new InvalidOperationException("查無此卡片");
+            return new SwipeResponseDTO
+            {
+                IsSuccess = false,
+                Message = "查無此卡片",
+                ErrorCode = SwipeErrorCode.CardNotFound
+            };
 
         if (!card.IsActive)
-            throw new InvalidOperationException("卡片未啟用");
+            return new SwipeResponseDTO
+            {
+                IsSuccess = false,
+                Message = "卡片未啟用",
+                ErrorCode = SwipeErrorCode.CardNotActive
+            };
 
         var response = new SwipeResponseDTO
         {

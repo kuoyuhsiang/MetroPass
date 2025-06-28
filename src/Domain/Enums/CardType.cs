@@ -1,24 +1,32 @@
-namespace MetroPass.Domain.Enums;
+using System.ComponentModel.DataAnnotations;
 
-public enum CardType
+namespace MetroPass.Domain.Enums
 {
-    /// <summary>
-    /// 一般票卡
-    /// </summary>
-    Ｓtandard,
+    public enum CardType
+    {
+        /// <summary>
+        /// 一般票卡
+        /// </summary>
+        [Display(Name = "一般票卡")]
+        Ｓtandard,
 
-    /// <summary>
-    /// 學生票
-    /// </summary>
-    Studend,
+        /// <summary>
+        /// 學生票
+        /// </summary>
+        [Display(Name = "學生票")]
+        Student,
 
-    /// <summary>
-    /// 敬老票
-    /// </summary>
-    Elderly,
+        /// <summary>
+        /// 敬老票
+        /// </summary>
+       [Display(Name = "敬老票")] 
+        Elderly,
 
-    /// <summary>
-    //  基北北桃都會通
-    /// </summary>
-    TPass
+        /// <summary>
+        //  基北北桃都會通
+        /// </summary>
+        [Display(Name = "基北北桃都會通")]
+        TPass
+    }
+
 }
