@@ -8,6 +8,7 @@ namespace MetroPass.Presentation.Register
         public static IServiceCollection RegisterApplication(this IServiceCollection service)
         {
             service.AddScoped<ISwipeCardAppService, SwipeCardAppService>();
+            service.AddScoped<IJwtService, JwtAppService>();
             return service;
         }
     }
