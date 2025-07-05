@@ -1,5 +1,6 @@
 using MetroPass.Application.Configurations;
 using MetroPass.Presentation.Register;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,8 @@ builder.Services.RegisterRepository();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtSetting"));
+builder.Services.AddSingleton(sp =>
+    sp.GetRequiredService<IOptions<JwtConfig>>().Value);
 
 var app = builder.Build();
 
